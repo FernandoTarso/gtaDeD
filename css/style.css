@@ -8,13 +8,19 @@ ul,
 li {
   margin: 0;
 }
+@font-face {
+  font-family: "ChaletComprime";
+  src: url(/fnt/ChaletComprime.ttf);
+}
 
 body {
+  font-family: "ChaletComprime";
   color: #ffffff;
 }
 
 ul,
-ol {
+ol,
+summary {
   list-style: none;
   padding-inline-start: 0;
 }
@@ -35,6 +41,7 @@ header {
 }
 
 .container {
+  display: grid;
   width: 100%;
   max-width: 1000px;
   margin: 0 auto;
@@ -132,6 +139,114 @@ main::before {
   border: 2px solid #ffffff;
   border-radius: 5px;
   margin-top: 1rem;
-  padding: 1.4rem 4rem;
+  padding: 1.2rem 3.6rem;
   width: max-content;
+}
+.btn-2 {
+  display: block;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  background: #1a1a1a;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  margin-top: 1rem;
+  padding: 1.2rem 3.6rem;
+}
+ul .btn-2 {
+  width: max-content;
+}
+.btn:hover {
+  background: #ffffff;
+  color: #000000;
+  transition: 0.3s;
+}
+.btn-2:hover {
+  cursor: pointer;
+}
+
+#comprar {
+  min-height: 150vh;
+  max-height: 250vh;
+  background-image: url(/img/bg-section.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#comprar h2 {
+  margin: 3rem auto;
+  font-size: 3rem;
+  text-transform: capitalize;
+}
+
+.cartao {
+  max-width: 400px;
+  display: grid;
+  background-color: #020202;
+  border-radius: 5px;
+  margin: 0 auto;
+  padding: 3rem;
+  justify-items: center;
+}
+.cartao h3 {
+  margin: 2rem auto 1rem;
+  font-size: 3rem;
+}
+.cartao p {
+  margin: 1rem auto 2rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.capa {
+  display: block;
+  margin: 3rem auto 0;
+  width: 300px;
+  height: 300px;
+}
+
+.plataformas {
+  max-width: 90%;
+  margin-right: -2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.plataformas li {
+  display: inline-block;
+  margin: 0 2rem 1rem 0;
+}
+
+.lista-plataformas li {
+  display: block;
+  width: auto;
+  text-align: center;
+}
+.lista-plataformas li:nth-child(2n-1) {
+  border: 1px solid #00439c;
+}
+.lista-plataformas li:nth-child(2n-1):hover {
+  background: #00439c;
+  transition: 0.3s;
+}
+.lista-plataformas li:nth-child(2n) {
+  border: 1px solid #387a26;
+}
+.lista-plataformas li:nth-child(2n):hover {
+  background: #387a26;
+  transition: 0.3s;
+}
+.lista-plataformas li:nth-child(5) {
+  border: 1px solid #fcaf17;
+}
+.lista-plataformas li:nth-child(5):hover {
+  background: #fcaf17;
+  transition: 0.3s;
+}
+details.btn-2 {
+  padding: initial;
+}
+summary {
+  display: block;
+  text-align: center;
+  padding: 1.2rem auto;
 }
