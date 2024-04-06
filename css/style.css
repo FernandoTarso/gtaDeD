@@ -9,6 +9,10 @@ li {
   margin: 0;
 }
 
+body {
+  color: #ffffff;
+}
+
 ul,
 ol {
   list-style: none;
@@ -23,7 +27,6 @@ a {
 
 nav a {
   text-transform: capitalize;
-  color: #ffffff;
 }
 
 header {
@@ -39,6 +42,7 @@ header {
 
 header .container {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
@@ -72,6 +76,7 @@ ul[aria-label="primaria"] a:hover:after {
   align-items: center;
   gap: 2rem;
   position: relative;
+  margin: 1rem;
 }
 .logo:before {
   content: "";
@@ -83,4 +88,50 @@ ul[aria-label="primaria"] a:hover:after {
   bottom: 0;
   left: calc(26px + 1rem);
   background-color: #ffffff;
+}
+
+main {
+  position: relative;
+  display: grid;
+  height: 100vh;
+  background-image: url(/img/bg-main.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+main::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(90deg, #000000aa, #00000000);
+  z-index: 1;
+}
+
+.info {
+  position: absolute;
+  max-width: 600px;
+  margin: 8rem auto auto 4rem;
+  z-index: 2;
+}
+.info h1 {
+  font-size: 3rem;
+}
+.info p {
+  font-size: 2rem;
+}
+.info h1,
+.info p {
+  margin: 1rem auto 0;
+}
+
+.btn {
+  display: block;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  background: #ffffff30;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  margin-top: 1rem;
+  padding: 1.4rem 4rem;
+  width: max-content;
 }
