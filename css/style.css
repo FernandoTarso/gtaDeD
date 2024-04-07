@@ -61,6 +61,7 @@ ul[aria-label="primaria"] a {
   display: inline-block;
   padding: 2rem 1.2rem;
   position: relative;
+  font-size: 1.5rem;
 }
 ul[aria-label="primaria"] a::after {
   content: "";
@@ -99,7 +100,8 @@ ul[aria-label="primaria"] a:hover:after {
 main {
   position: relative;
   display: grid;
-  height: 100vh;
+  min-height: 100vh;
+  max-height: 120vh;
   background-image: url(/img/bg-main.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -151,6 +153,7 @@ main::before {
 .btn,
 .btn-2 {
   padding: 1.2rem 3.6rem;
+  text-align: center;
 }
 details {
   width: 80%;
@@ -254,4 +257,88 @@ summary:hover {
 .lista-plataformas li:nth-child(5):hover {
   background: #fcaf17;
   transition: 0.3s;
+}
+
+@media (max-width: 600px) {
+  header .container {
+    justify-content: center;
+  }
+  .cartao {
+    padding: 1.5rem;
+  }
+  img[src$=".svg"],
+  img[src|="./img/gta5.jpg"] {
+    transform: scale(0.9);
+  }
+  html {
+    font-size: 14px;
+  }
+}
+@media (max-width: 500px) {
+  .btn,
+  .btn-2 {
+    padding: 1.2rem 2.2rem;
+  }
+  .capa {
+    margin-top: 2rem;
+  }
+  .cartao {
+    padding: 1rem;
+  }
+  img[src$=".svg"],
+  img[src|="./img/gta5.jpg"] {
+    transform: scale(0.8);
+  }
+  html {
+    font-size: 14px;
+  }
+}
+@media (max-width: 400px) {
+  .info {
+    margin-top: 2rem;
+    margin-left: 2rem;
+    justify-items: center;
+  }
+  .info img {
+    margin-left: 4rem;
+  }
+  .capa {
+    margin-top: 1.5rem;
+  }
+  .plataformas,
+  .plataformas li {
+    margin-right: 0;
+  }
+  .plataformas {
+    flex-direction: column;
+    align-items: center;
+    margin: 1.5rem auto;
+  }
+  .cartao {
+    max-width: 300px;
+    padding: 1rem;
+  }
+  .btn-0 {
+    margin: 0;
+  }
+  details {
+    margin: 1.5rem auto;
+  }
+  summary {
+    padding: 0.8rem 4rem;
+  }
+  li .btn-2 {
+    margin: 0.8rem 0.5rem !important;
+    padding: 0.8rem 2rem !important;
+  }
+  /* .btn-2 {
+    margin: 0.5rem 0.8rem !important;
+  } */
+  img[src$=".svg"],
+  img[src|="./img/gta5.jpg"] {
+    transform: scale(0.7);
+  }
+  html {
+    font-size: 13px;
+  }
 }
