@@ -19,8 +19,7 @@ body {
 }
 
 ul,
-ol,
-summary {
+ol {
   list-style: none;
   padding-inline-start: 0;
 }
@@ -131,29 +130,39 @@ main::before {
   margin: 1rem auto 0;
 }
 
+.btn,
+.btn-2,
+.btn-0 {
+  display: block;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
 .btn {
-  display: block;
-  font-size: 1.5rem;
-  text-transform: uppercase;
   background: #ffffff30;
-  border: 2px solid #ffffff;
-  border-radius: 5px;
-  margin-top: 1rem;
-  padding: 1.2rem 3.6rem;
   width: max-content;
 }
-.btn-2 {
-  display: block;
-  font-size: 1.5rem;
-  text-transform: uppercase;
+.btn-2,
+.btn-0 {
   background: #1a1a1a;
-  border: 2px solid #ffffff;
-  border-radius: 5px;
-  margin-top: 1rem;
+}
+.btn,
+.btn-2 {
   padding: 1.2rem 3.6rem;
 }
-ul .btn-2 {
-  width: max-content;
+details {
+  width: 80%;
+}
+summary {
+  box-sizing: border-box;
+  display: block;
+  text-align: center;
+  padding: 1.2rem 5rem;
+}
+summary:hover {
+  cursor: pointer;
 }
 .btn:hover {
   background: #ffffff;
@@ -220,6 +229,10 @@ ul .btn-2 {
   display: block;
   width: auto;
   text-align: center;
+  margin: 1rem 2rem;
+}
+.lista-plataformas li:last-child {
+  margin-bottom: 2rem;
 }
 .lista-plataformas li:nth-child(2n-1) {
   border: 1px solid #00439c;
@@ -241,12 +254,4 @@ ul .btn-2 {
 .lista-plataformas li:nth-child(5):hover {
   background: #fcaf17;
   transition: 0.3s;
-}
-details.btn-2 {
-  padding: initial;
-}
-summary {
-  display: block;
-  text-align: center;
-  padding: 1.2rem auto;
 }
