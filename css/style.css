@@ -10,7 +10,7 @@ li {
 }
 @font-face {
   font-family: "ChaletComprime";
-  src: url(/fnt/ChaletComprime.ttf);
+  src: url(../fnt/ChaletComprime.ttf);
 }
 
 body {
@@ -179,7 +179,7 @@ summary:hover {
 #comprar {
   min-height: 150vh;
   max-height: 250vh;
-  background-image: url(/img/bg-section.jpg);
+  background-image: url(../img/bg-section.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
