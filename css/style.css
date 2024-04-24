@@ -155,7 +155,16 @@ main::before {
   padding: 1.2rem 3.6rem;
   text-align: center;
 }
-details {
+
+.btn-show {
+  width: max-content;
+  display: block;
+  padding: 2rem 28% 2rem 28%;
+}
+.btn-show:hover {
+  cursor: pointer;
+}
+/* details {
   width: 80%;
 }
 summary {
@@ -166,7 +175,7 @@ summary {
 }
 summary:hover {
   cursor: pointer;
-}
+} */
 .btn:hover {
   background: #ffffff;
   color: #000000;
@@ -191,41 +200,43 @@ summary:hover {
 }
 
 .cartao {
-  max-width: 400px;
   display: grid;
   background-color: #020202;
-  border-radius: 5px;
+  width: 100%;
+  max-width: 600px;
   margin: 0 auto;
-  padding: 3rem;
-  justify-items: center;
+  justify-content: center;
 }
 .cartao h3 {
-  margin: 2rem auto 1rem;
+  text-align: center;
   font-size: 3rem;
+  margin-bottom: 1rem;
 }
 .cartao p {
-  margin: 1rem auto 2rem;
-  font-size: 1.5rem;
   text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .capa {
   display: block;
-  margin: 3rem auto 0;
+  justify-self: center;
   width: 300px;
   height: 300px;
+  margin: 3rem 0;
 }
 
 .plataformas {
-  max-width: 90%;
+  max-width: 70%;
   margin-right: -2rem;
   display: flex;
   flex-wrap: wrap;
+  justify-self: center;
   justify-content: space-between;
+  gap: 1rem;
 }
 .plataformas li {
   display: inline-block;
-  margin: 0 2rem 1rem 0;
 }
 
 .lista-plataformas li {
@@ -263,37 +274,31 @@ summary:hover {
   header .container {
     justify-content: center;
   }
-  .cartao {
-    padding: 1.5rem;
-  }
-  img[src$=".svg"],
+  
+  /* img[src$=".svg"],
   img[src|="./img/gta5.jpg"] {
-    transform: scale(0.9);
+    transform: scale(0.9); */
   }
   html {
     font-size: 14px;
   }
 }
 @media (max-width: 500px) {
-  .btn,
-  .btn-2 {
+  .btn {
     padding: 1.2rem 2.2rem;
   }
-  .capa {
-    margin-top: 2rem;
-  }
-  .cartao {
-    padding: 1rem;
-  }
-  img[src$=".svg"],
+  /* img[src$=".svg"],
   img[src|="./img/gta5.jpg"] {
     transform: scale(0.8);
-  }
+  } */
   html {
     font-size: 14px;
   }
 }
 @media (max-width: 400px) {
+  .logo {
+    margin: 0.5rem;
+  }
   .info {
     margin-top: 2rem;
     margin-left: 2rem;
@@ -303,41 +308,27 @@ summary:hover {
     margin-left: 4rem;
   }
   .capa {
-    margin-top: 1.5rem;
-  }
-  .plataformas,
-  .plataformas li {
-    margin-right: 0;
+    width: 200px;
+    height: 200px;
   }
   .plataformas {
     flex-direction: column;
     align-items: center;
-    margin: 1.5rem auto;
-  }
-  .cartao {
-    max-width: 300px;
-    padding: 1rem;
   }
   .btn-0 {
     margin: 0;
   }
-  details {
-    margin: 1.5rem auto;
-  }
-  summary {
-    padding: 0.8rem 4rem;
-  }
-  li .btn-2 {
+  /* li .btn-2 {
     margin: 0.8rem 0.5rem !important;
-    padding: 0.8rem 2rem !important;
-  }
+    padding: 0.8rem 1.5rem !important;
+  } */
   /* .btn-2 {
     margin: 0.5rem 0.8rem !important;
   } */
-  img[src$=".svg"],
+  /* img[src$=".svg"],
   img[src|="./img/gta5.jpg"] {
-    transform: scale(0.7);
-  }
+    transform: scale(0.6);
+  } */
   html {
     font-size: 13px;
   }
