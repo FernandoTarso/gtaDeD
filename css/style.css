@@ -166,6 +166,7 @@ main::before {
 .btn-0 {
   width: 276px;
   justify-self: center;
+  margin-bottom: 3rem;
 }
 
 .btn-show {
@@ -270,6 +271,10 @@ main::before {
 .lista-plataformas li:nth-child(5):hover {
   background: #fcaf17;
   transition: 0.3s;
+}
+
+.hide {
+  display: none;
 }
 
 @media (max-width: 600px) {
