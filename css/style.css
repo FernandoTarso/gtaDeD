@@ -56,6 +56,10 @@ header .container {
 header ul {
   display: flex;
 }
+li img {
+  justify-self: center;
+  align-self: center;
+}
 
 ul[aria-label="primaria"] a {
   display: inline-block;
@@ -150,32 +154,29 @@ main::before {
 .btn-0 {
   background: #1a1a1a;
 }
-.btn,
-.btn-2 {
+.btn {
   padding: 1.2rem 3.6rem;
   text-align: center;
+}
+.btn-2 {
+  width: 6rem;
+  height: 4rem;
+  padding-top: 2rem;
+}
+.btn-0 {
+  width: 276px;
+  justify-self: center;
 }
 
 .btn-show {
   width: max-content;
   display: block;
-  padding: 2rem 28% 2rem 28%;
+  padding: 2rem 22% 2rem 22%;
 }
 .btn-show:hover {
   cursor: pointer;
 }
-/* details {
-  width: 80%;
-}
-summary {
-  box-sizing: border-box;
-  display: block;
-  text-align: center;
-  padding: 1.2rem 5rem;
-}
-summary:hover {
-  cursor: pointer;
-} */
+
 .btn:hover {
   background: #ffffff;
   color: #000000;
@@ -234,6 +235,7 @@ summary:hover {
   justify-self: center;
   justify-content: space-between;
   gap: 1rem;
+  margin-bottom: 1rem;
 }
 .plataformas li {
   display: inline-block;
@@ -274,10 +276,8 @@ summary:hover {
   header .container {
     justify-content: center;
   }
-  
-  /* img[src$=".svg"],
-  img[src|="./img/gta5.jpg"] {
-    transform: scale(0.9); */
+  .btn-show {
+    padding: 2rem 25.3% 2rem 25.3%;
   }
   html {
     font-size: 14px;
@@ -287,10 +287,9 @@ summary:hover {
   .btn {
     padding: 1.2rem 2.2rem;
   }
-  /* img[src$=".svg"],
-  img[src|="./img/gta5.jpg"] {
-    transform: scale(0.8);
-  } */
+  .btn-show {
+    padding: 2rem 25.5% 2rem 25.5%;
+  }
   html {
     font-size: 14px;
   }
@@ -314,21 +313,18 @@ summary:hover {
   .plataformas {
     flex-direction: column;
     align-items: center;
+    margin-right: 0;
   }
   .btn-0 {
     margin: 0;
   }
-  /* li .btn-2 {
-    margin: 0.8rem 0.5rem !important;
-    padding: 0.8rem 1.5rem !important;
-  } */
-  /* .btn-2 {
-    margin: 0.5rem 0.8rem !important;
-  } */
-  /* img[src$=".svg"],
-  img[src|="./img/gta5.jpg"] {
-    transform: scale(0.6);
-  } */
+  li .btn-2 {
+    margin: 0.8rem 0.4rem !important;
+    padding: 0.8rem 1.4rem !important;
+  }
+  .btn-show {
+    padding: 2rem 27% 2rem 27%;
+  }
   html {
     font-size: 13px;
   }
